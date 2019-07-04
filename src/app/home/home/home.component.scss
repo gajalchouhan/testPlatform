@@ -1,0 +1,300 @@
+$colors: (
+  primary: #0a79df,
+  accent: #26ae60,
+  exam_box_color: #fff,
+  sec_2_background_color: #192a56,
+  sec_2_font_color: white
+);
+
+$fonts: (
+  font_family: open sans-serif,
+  font_primary_size: 1.2rem,
+  font_secondary_size: 2vw,
+  text_transform: capitalize
+);
+
+$card: (
+  radius: 5px
+);
+
+
+.sec_1 {
+  display: flex;
+
+  .sec_11 {
+    flex: 1;
+    order: 1;
+    text-align: center;
+
+    p {
+      padding: 5vh 8vw;
+      font-size: 2vw;
+      font-family: map-get($fonts, font_family);
+    }
+  }
+
+  .sec_12 {
+    flex: 1;
+    order: 2;
+    padding: 5vh 2vw 1vh 12vw;
+
+    p {
+      font-size: 2vw;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+
+      li {
+        display: inline-block;
+        margin: 1vh 2vw 1vh 0;
+        position: relative;
+        background: #0f0c29; /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(
+          to right,
+          #24243e,
+          #302b63,
+          #0f0c29
+        ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        padding: 0.5vw 1vw;
+        color: map-get($map: $colors, $key: exam_box_color);
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.sec_2 {
+  display: flex;
+  text-align: center;
+  margin-top: 15vh;
+  justify-content: space-between;
+  // background-color: #DAE0E2;
+  padding-bottom: 3vh;
+  // flex-basis: 27%;
+
+  .sec_21 {
+    flex: 1;
+    order: 1;
+    padding: 3vh 0;
+    margin: 0.5vh 1vw 0.5vh 7vw;
+    border-radius: map-get($map: $card, $key: radius);
+    background-color: map-get($map: $colors, $key: sec_2_background_color);
+
+    p {
+      color: map-get($map: $colors, $key: sec_2_font_color);
+      font-size: map-get($map: $fonts, $key: font_primary_size);
+      text-transform: capitalize;
+    }
+  }
+
+  .sec_22 {
+    flex: 1;
+    order: 2;
+    padding: 3vh 0;
+    margin: 0.5vh 0.5vw;
+    border-radius: map-get($map: $card, $key: radius);
+    background-color: map-get($map: $colors, $key: sec_2_background_color);
+
+    p {
+      color: map-get($map: $colors, $key: sec_2_font_color);
+      font-size: map-get($map: $fonts, $key: font_primary_size);
+      text-transform: capitalize;
+    }
+  }
+
+  .sec_23 {
+    flex: 1;
+    order: 3;
+    padding: 3vh 0;
+    margin: 0.5vh 0.5vw;
+    border-radius: map-get($map: $card, $key: radius);
+    background-color: map-get($map: $colors, $key: sec_2_background_color);
+
+    p {
+      color: map-get($map: $colors, $key: sec_2_font_color);
+      font-size: map-get($map: $fonts, $key: font_primary_size);
+      text-transform: capitalize;
+    }
+  }
+
+  .sec_24 {
+    flex: 1;
+    order: 4;
+    padding: 3vh 0;
+    margin: 0.5vh 0.5vw;
+    border-radius: map-get($map: $card, $key: radius);
+    background-color: map-get($map: $colors, $key: sec_2_background_color);
+
+    p {
+      color: map-get($map: $colors, $key: sec_2_font_color);
+      font-size: map-get($map: $fonts, $key: font_primary_size);
+      text-transform: capitalize;
+    }
+  }
+
+  .sec_25 {
+    flex: 1;
+    order: 5;
+    padding: 3vh 0;
+    margin: 0.5vh 7vw 0.5vh 1vw;
+    border-radius: map-get($map: $card, $key: radius);
+    background-color: map-get($map: $colors, $key: sec_2_background_color);
+
+    p {
+      color: map-get($map: $colors, $key: sec_2_font_color);
+      font-size: map-get($map: $fonts, $key: font_primary_size);
+      text-transform: capitalize;
+    }
+  }
+}
+
+.sec_3 {
+  margin-top: 20vh 5vw 0 5vw;
+
+  h4 {
+    margin-top: 15vh;
+    text-align: center;
+    font-size: map-get($map: $fonts, $key: font_secondary_size);
+  }
+
+  .sec_31 {
+    display: flex;
+    .sec_311 {
+      margin: 2vh 2vw 2vh 7vw;
+      padding: 5vh 0;
+      flex: 1;
+      order: 1;
+      text-align: center;
+      border-radius: map-get($map: $card, $key: radius);
+      background-color: map-get($map: $colors, $key: sec_2_background_color);
+    }
+
+    .sec_312 {
+      flex: 1;
+      order: 2;
+      text-align: center;
+      margin: 2vh 7vw 2vh 2vw;
+      padding: 5vh 0;
+      border-radius: map-get($map: $card, $key: radius);
+      background-color: map-get($map: $colors, $key: sec_2_background_color);
+    }
+
+    blockquote {
+      color: white;
+      font-size: 1vw;
+      padding: 5vh 7vw;
+    }
+  }
+}
+
+.sec_4 {
+  h4 {
+    margin-top: 15vh;
+    text-align: center;
+    font-size: map-get($map: $fonts, $key: font_secondary_size);
+  }
+
+  .sec_41 {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    margin: 2vh 7vw 2vh 7vw;
+    padding: 5vh 0;
+    background-color: map-get($map: $colors, $key: sec_2_background_color);
+
+    .sec_411 {
+      flex: 1;
+      order: 1;
+
+      p {
+        color: white;
+        margin-top: 2vh;
+        font-family: map-get($fonts, font_family);
+        font-weight: 600;
+      }
+    }
+
+    .sec_412 {
+      flex: 1;
+      order: 2;
+
+      p {
+        color: white;
+        margin-top: 2vh;
+        font-family: map-get($fonts, font_family);
+        font-weight: 600;
+      }
+    }
+
+    .sec_413 {
+      flex: 1;
+      order: 3;
+
+      p {
+        color: white;
+        margin-top: 2vh;
+        font-family: map-get($fonts, font_family);
+        font-weight: 600;
+      }
+    }
+
+    .sec_414 {
+      flex: 1;
+      order: 4;
+
+      p {
+        color: white;
+        margin-top: 2vh;
+        font-family: map-get($fonts, font_family);
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+.sec_51 {
+  margin: 15vh 7vw 2vh 7vw;
+  display: flex;
+  background-color: map-get($map: $colors, $key: sec_2_background_color);
+  color : white;
+  padding : 2vw;
+
+  .sec_511 {
+    flex: 1;
+    flex-direction: column;
+
+    div{
+      margin-top : 1vh;
+      cursor: pointer;
+    }
+  }
+
+  .sec_512 {
+    flex: 1;
+    flex-direction: column;
+
+    div{
+      margin-top : 1vh;
+    }
+  }
+
+  .sec_513 {
+    flex: 1;
+    flex-direction: column;
+
+    .sec_5131{
+
+      span{
+        padding : 5px 5px;
+        background-color: black;
+        margin : 2px;
+        border-radius: 1px;
+        opacity: 0.7;
+        cursor: pointer;
+      }
+    }
+  }
+}

@@ -1,0 +1,94 @@
+.home {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  position: sticky;
+  top : 0;
+  z-index: 100;
+}
+
+$colors: (
+  primary: #0a79df,
+  accent: #26ae60,
+  exam_box_color: #fff,
+  sec_2_background_color: #192a56,
+  sec_2_font_color: white
+);
+
+$fonts: (
+  font_family: open sans-serif,
+  font_primary_size: 1.2rem,
+  font_secondary_size: 2vw,
+  text_transform: capitalize
+);
+
+$card: (
+  radius: 5px
+);
+
+header {
+  background: #efefbb; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #d4d3dd, #efefbb); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #d4d3dd,
+    #efefbb
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  padding: 0;
+
+  .logo {
+    float: left;
+    height: 50px;
+    width: 50px;
+    margin-left: 2vw;
+  }
+
+  nav {
+    float: right;
+    margin-right: 2vw;
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+
+      li {
+        display: inline-block;
+        margin-left: 2vw;
+        padding-top: 2vh;
+        position: relative;
+
+        a {
+          color: #444;
+          text-decoration: none;
+          text-transform: uppercase;
+          font-size: 14px;
+        }
+
+        a:hover {
+          color: #000;
+        }
+
+        a::before {
+          content: "";
+          display: block;
+          height: 3px;
+          background-color: #444;
+          width: 0%;
+          position: absolute;
+          top: 0;
+          transition: all ease-in-out 250ms;
+        }
+
+        a:hover::before {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+header::after {
+  content: "";
+  display: table;
+  clear: both;
+}

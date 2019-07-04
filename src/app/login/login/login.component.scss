@@ -1,0 +1,128 @@
+.bg-modal {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+}
+
+.modal-content {
+  width: 70%;
+  height: auto;
+  background-color: #fff;
+  border-radius: 4px;
+  //   text-align: center;
+  position: relative;
+  transition-delay: 2s;
+  padding: 2vw;
+  background-color: rgb(15, 116, 92);
+}
+
+.close {
+  position: absolute;
+  top: 0;
+  right: 14px;
+  font-size: 2vw;
+  transform: rotate(45deg);
+  cursor: pointer;
+  font-family: open sans-serif;
+  color: white;
+  font-weight: solid;
+}
+
+input {
+  width: 100%;
+  display: block;
+  margin: 2vh 0;
+  padding: 1vh 1vw;
+  // text-transform: capitalize;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+}
+
+input:focus {
+  box-shadow: 3px 3px 3px lightgray;
+}
+
+.signup_with {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+
+  .google {
+    background-color: #e71c23;
+    color: white;
+    padding: 5px;
+    margin: 1vw;
+    cursor: pointer;
+    padding: 0.3vh 0.5vw;
+    border-radius: 4px;
+    box-shadow: 3px 3px 3px lightgray;
+  }
+
+  .facebook {
+    background-color: #2475b0;
+    color: white;
+    padding: 5px;
+    margin: 1vw;
+    cursor: pointer;
+    padding: 0.3vh 0.5vw;
+    border-radius: 4px;
+    box-shadow: 3px 3px 3px lightgray;
+  }
+}
+
+.forms {
+  display: flex;
+
+  .signup_class {
+    flex: 1.5;
+    background-color: #fff;
+    padding: 1vw;
+
+    .signup_btn {
+      width: 100%;
+      input {
+        width: 100%;
+        padding: 0.3vh 0.5vw;
+        border-radius: 4px;
+        box-shadow: 3px 3px 3px lightgray;
+        background-color: #e71c23;
+        color: white;
+        border: 0px solid lightgray;
+      }
+    }
+  }
+
+  .login_class {
+    flex: 1;
+    background-color: #0a3d62;
+    padding: 5vh 2vw 1vw 1vw;
+
+    h4 {
+      text-align: center;
+      color: white;
+      text-transform: capitalize;
+    }
+
+    .login_btn {
+      a {
+        color: white;
+        float: left;
+      }
+
+      button {
+        background-color: #e71c23;
+        color: white;
+        border: 0px solid lightgray;
+        float: right;
+        padding: 0.3vh 0.5vw;
+        border-radius: 4px;
+      }
+    }
+  }
+}

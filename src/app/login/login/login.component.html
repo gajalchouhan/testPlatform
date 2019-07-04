@@ -1,0 +1,59 @@
+<div class='bg-modal'>
+  <div class="modal-content">
+    <div class="close" (click)="closeLogin()"> <a>+</a></div>
+    <!-- <img src="./../assets/image_icons/award.webp" alt="icon image" /> -->
+
+    <div class="forms">
+
+      <form (submit)="signUpUser()" class="signup_class">
+        <div class="signup_with">
+          <div class="google">
+            <i class="fa fa-google"></i>
+            | Google
+          </div>
+          <div class="facebook">
+            <i class="fa fa-facebook"></i>
+            | Facebook
+          </div>
+        </div>
+        <div>
+          <div class="user_name">
+            <input type="text" placeholder="First Name" />
+            <input type="text" placeholder="Last Name" />
+          </div>
+          <div>
+            <input type="tel" placeholder="Mobile Number" />
+          </div>
+          <div>
+            <input type="email" placeholder="Email" />
+          </div>
+          <div>
+            <input type="password" placeholder="Password" />
+          </div>
+          <div>
+            <input type="password" placeholder="Confirm Password" />
+          </div>
+          <div class="signup_btn">
+            <input type="submit" value="Sign Up" />
+          </div>
+        </div>
+      </form>
+
+      <form action="" class="login_class">
+        <h4> Login </h4>
+        <div>
+          <div>
+            <input type="email" placeholder="email" />
+          </div>
+          <div>
+            <input type="password" placeholder="password" />
+          </div>
+          <div class="login_btn">
+            <a>Forgot Password?</a>
+            <button type="button">Login</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
