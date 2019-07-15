@@ -5,7 +5,7 @@
 
     <div class="forms">
 
-      <form (submit)="signUpUser()" class="signup_class">
+      <form (submit)="signUpUser($event)" class="signup_class">
         <div class="signup_with">
           <div class="google">
             <i class="fa fa-google"></i>
@@ -18,39 +18,39 @@
         </div>
         <div>
           <div class="user_name">
-            <input type="text" placeholder="First Name" />
-            <input type="text" placeholder="Last Name" />
+            <input id="userName" type="text" placeholder="First Name" />
+            <!-- <input type="text" placeholder="Last Name" /> -->
           </div>
           <div>
-            <input type="tel" placeholder="Mobile Number" />
+            <input id="contactNumber" type="tel" placeholder="Mobile Number" />
           </div>
           <div>
-            <input type="email" placeholder="Email" />
+            <input id="emailId" type="email" placeholder="Email" />
           </div>
           <div>
-            <input type="password" placeholder="Password" />
+            <input id="password" type="password" placeholder="Password" />
           </div>
           <div>
-            <input type="password" placeholder="Confirm Password" />
+            <input id="confirmPassword" type="password" placeholder="Confirm Password" />
           </div>
           <div class="signup_btn">
-            <input type="submit" value="Sign Up" />
+            <input id="submit" type="submit" value="Sign Up" />
           </div>
         </div>
       </form>
 
-      <form action="" class="login_class">
+      <form (submit)="loginUser($event)" class="login_class">
         <h4> Login </h4>
         <div>
           <div>
-            <input type="email" placeholder="email" />
+            <input id="lusername" type="email" placeholder="email" />
           </div>
           <div>
-            <input type="password" placeholder="password" />
+            <input id="lpassword" type="password" placeholder="password" />
           </div>
           <div class="login_btn">
             <a>Forgot Password?</a>
-            <button type="button">Login</button>
+            <input id="loginSubmit" type="submit" value="Login" />
           </div>
         </div>
       </form>
