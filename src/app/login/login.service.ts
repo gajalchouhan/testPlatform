@@ -26,7 +26,7 @@ export class LoginService {
   }
 
   public setLoggedIn(value: boolean) {
-    this.loggedInStatus = value
+    this.loggedInStatus = value;
   }
 
   get isLoggedIn() {
