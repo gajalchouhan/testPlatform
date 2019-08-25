@@ -26,7 +26,6 @@ import { AppService } from './app.service';
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-
     LoginModule,
     HomeModule,
     ChallengesModule

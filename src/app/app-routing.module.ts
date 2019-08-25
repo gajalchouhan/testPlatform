@@ -7,7 +7,7 @@ import { AppGuard } from './app.guard';
 
 const routes: Routes = [
   { path: '', redirectTo: '/login', pathMatch: 'full' },
-  { path: 'home', component: HomeComponent, canActivate: [AppGuard] },
+  { path: 'home', component: HomeComponent}, // canActivate: [AppGuard] 
   { path: 'login', component: LoginComponent },
   { path: 'challenges', component: ChallengesComponent }
 ];

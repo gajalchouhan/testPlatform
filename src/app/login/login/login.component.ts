@@ -34,6 +34,7 @@ export class LoginComponent implements OnInit {
       res => {
         console.log(res);
         if (res) {
+          console.log(localStorage.userInfo);
           this.route.navigate(['/home']);
           this.loginServ.setLoggedIn(true);
         }

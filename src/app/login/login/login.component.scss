@@ -26,7 +26,6 @@
   top: 0;
   right: 14px;
   font-size: 2vw;
-  transform: rotate(45deg);
   cursor: pointer;
   font-family: open sans-serif;
   color: white;
@@ -94,6 +93,7 @@ input:focus {
         background-color: #e71c23;
         color: white;
         border: 0px solid lightgray;
+        cursor: pointer;
       }
     }
   }

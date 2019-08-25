@@ -1,9 +1,9 @@
 <div class="home">
   <header>
-    <div>
-      <img src="./assets/icons/exam.svg" alt="logo" class="logo" />
-      <nav>
-        <ul>
+    <nav>
+      <div class="nav-wrapper">
+        <img src="./assets/icons/exam.svg" alt="logo" class="logo brand-logo" />
+        <ul id="nav-mobile" class="right">
           <li><a routerLink="/home">Home</a></li>
           <li><a routerLink="/challenges">Challenges</a></li>
           <li><a href="#">Practice</a></li>
@@ -12,8 +12,8 @@
           <li><a href="#">Support</a></li>
           <li><a routerLink="/login">SignUp/Login</a></li>
         </ul>
-      </nav>
-    </div>
+      </div>
+    </nav>
   </header>
 </div>
 <router-outlet></router-outlet>

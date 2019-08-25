@@ -1,6 +1,6 @@
 <div class='bg-modal'>
   <div class="modal-content">
-    <div class="close" (click)="closeLogin()"> <a>+</a></div>
+    <div class="close" (click)="closeLogin()"> <i class="material-icons">clear</i></div>
     <!-- <img src="./../assets/image_icons/award.webp" alt="icon image" /> -->
 
     <div class="forms">
@@ -16,23 +16,33 @@
             | Facebook
           </div>
         </div>
+
         <div>
-          <div class="user_name">
-            <input id="userName" type="text" placeholder="First Name" />
-            <!-- <input type="text" placeholder="Last Name" /> -->
+          <div class="input-field">
+            <input type="text" id="userName">
+            <label class="active" for="userName">Name</label>
           </div>
-          <div>
-            <input id="contactNumber" type="tel" placeholder="Mobile Number" />
+
+          <div class="input-field">
+            <input type="email" id="emailId" class="validate">
+            <label for="emailId">Email</label>
           </div>
-          <div>
-            <input id="emailId" type="email" placeholder="Email" />
+
+          <div class="input-field">
+            <input type="tel" id="contactNumber" class="validate">
+            <label for="contactNumber">Mobile Number</label>
           </div>
-          <div>
-            <input id="password" type="password" placeholder="Password" />
+
+          <div class="input-field">
+            <input type="password" id="password" class="password">
+            <label for="password">Password</label>
           </div>
-          <div>
-            <input id="confirmPassword" type="password" placeholder="Confirm Password" />
+
+          <div class="input-field">
+            <input type="password" id="confirmPassword" class="password">
+            <label  for="confirmPassword">Confirm Password</label>
           </div>
+          
           <div class="signup_btn">
             <input id="submit" type="submit" value="Sign Up" />
           </div>
@@ -42,12 +52,16 @@
       <form (submit)="loginUser($event)" class="login_class">
         <h4> Login </h4>
         <div>
-          <div>
-            <input id="lusername" type="email" placeholder="email" />
+          <div class="input-field">
+            <input type="email" id="lusername" class="validate">
+            <label for="lusername">Email</label>
           </div>
-          <div>
-            <input id="lpassword" type="password" placeholder="password" />
+
+          <div class="input-field">
+            <input type="password" id="lpassword" class="password">
+            <label for="lpassword">Password</label>
           </div>
+
           <div class="login_btn">
             <a>Forgot Password?</a>
             <input id="loginSubmit" type="submit" value="Login" />
